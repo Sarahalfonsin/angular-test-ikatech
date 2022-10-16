@@ -73,6 +73,29 @@
       }
     }
   }
+  .instagram{
+    margin:20px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    .container-logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:rgba(69,69,69,255);
+    .logo{
+      width: 30px;
+      padding-right: 10px;
+    }
+  }
+  }
+  .gallery{
+    display: flex;
+    justify-content: space-between;
+    padding:0 96px 20px;
+    img{
+      width: 15%;
+    }
+  }
 }
 .button {
   position: relative;
