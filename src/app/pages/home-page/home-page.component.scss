@@ -1,0 +1,85 @@
+#home-page {
+  .firts-banner {
+    img {
+      height: 288px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .btn {
+      position: relative;
+      top: -50px;
+      left: 60%;
+      border: none;
+      background-color: white;
+      padding: 7px 25px;
+      cursor: pointer;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .second-baner {
+    display: flex;
+    margin: 0px 220px 20px;
+    gap: 20px;
+    .container {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      img {
+        height: 320px;
+      }
+      .scd {
+        background-color: gray;
+        color: white;
+        position: relative;
+        top: -40px;
+        width: 40%;
+        left: 30%;
+        height: 30px;
+        border: none;
+        padding: 7px 29px;
+        cursor: pointer;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  .fourth-baner {
+    display: flex;
+    margin: 20px 96px 20px;
+    gap: 20px;
+    .container {
+      width: 50%;
+      height: 678px;
+      img {
+        width: 100%;
+        height: inherit;
+      }
+    }
+    .f {
+      .b{
+        left: 30%;
+      }
+    }
+    .shoes {
+      display: flex;
+      flex-direction: column;
+      .division {
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+        img {
+          object-fit: cover;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+.button {
+  position: relative;
+  top: -70px;
+  align-self: center;
+  width: 20%;
+  border: none;
+  background: rgba(255, 255, 255, 0.884);
+  padding: 10px;
+}

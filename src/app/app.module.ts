@@ -13,6 +13,7 @@ import { ProductoPageComponent } from './pages/producto-page/producto-page.compo
 import { FormsModule } from '@angular/forms';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -32,7 +33,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
 import { FooterModule } from './components/footer/footer.module';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
@@ -44,6 +44,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     NavBarModule,
     FontAwesomeModule,
@@ -62,7 +63,6 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatDialogModule,
     MatSnackBarModule,
     MatInputModule,
-    FormsModule,
     MatProgressSpinnerModule,
     MatCardModule,
     MatGridListModule,

@@ -8,6 +8,7 @@
   #product {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10%;
     margin-bottom: 20px;
     .container-left{
@@ -67,6 +68,7 @@
         .size-item {
           display: flex;
           justify-content: center;
+          border:none;
           align-items: center;
           background-color: rgba(200, 198, 202, 255);
           width: 70px;
