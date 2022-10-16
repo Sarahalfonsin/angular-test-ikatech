@@ -1,0 +1,33 @@
+<nav class="nav-bar">
+  <div *ngIf="first" class="first">
+    <ul *ngFor="let item of items" >
+      <a
+        class="first-item"
+        [routerLink]="item.routerLink"
+      >
+        <span class="first-level-font">{{ item.label }}</span>
+      </a>
+    </ul>
+  </div>
+  <div *ngIf="second" class="container-second">
+    <div class="second">
+    <ul *ngFor="let item of itemsNav">
+      <a
+        class="second-item"
+        [routerLink]="item.routerLink"
+      >
+        <span>
+          {{ item.label }}
+        </span>
+      </a>
+    </ul>
+  </div>
+    <div class="bag">
+
+      <span class="material-icons-outlined">shopping_bag
+      </span>
+      <p class="text-bag">CARRITO {{buy}}</p>
+
+    </div>
+  </div>
+</nav>

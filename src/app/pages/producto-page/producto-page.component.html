@@ -1,0 +1,109 @@
+<div id="product-container">
+  <p class="rute">HUSHPUPPIESCO/CALZADO/ ZAPATILLA HOMBRE PELIKAN</p>
+  <div id="product">
+    <div class="container-left">
+    <div class="photo">
+      <img
+        class="img-izquierda"
+        [src]="'../../../assets/img/' + producto[0].foto"
+        alt="Foto"
+      />
+    </div>
+    <hr>
+
+    <div class="group-photos">
+    <div *ngFor="let foto of productoR; " >
+
+        <img
+          class="img-bottom"
+          [src]="'../../../assets/img/' + foto.foto"
+          [alt]="foto.nombre"/>
+    </div>
+  </div>
+  </div>
+
+  <div class="description">
+<h1 class="name"> {{producto[0].nombre}}</h1>
+<p class="price"> ${{producto[0].precio}}</p>
+<p class="reference">Cod. de producto zap-{{producto[0].referencia}}</p>
+<div>
+<p class="p-right">Color</p>
+<img
+        class="img-right"
+        [src]="'../../../assets/img/' + producto[0].foto"
+        alt="Foto"
+      />
+</div>
+<div>
+<p class="p-right">Talla</p>
+<div class="size">
+  <button class="size-item">5</button>
+  <button class="size-item">5.5</button>
+  <button class="size-item">6</button>
+  <button class="size-item">6.5</button>
+  <button class="size-item">7</button>
+  <button class="size-item">7.5</button>
+  <button class="size-item">8</button>
+  <button class="size-item">8.5</button>
+  <button class="size-item">9</button>
+  <button class="size-item">9.5</button>
+  
+</div>
+</div>
+<p  class="p-right"><a  class="p-right" href="/productos">GUIA DE TALLAS</a></p>
+  <div class="bag-shopping">
+    <button class="btn" (click)="addShopping()">AÑADIR AL CARRITO</button>
+    <span class="material-icons fav">favorite</span>
+  </div>
+</div>
+
+  </div>
+<div class="details">
+  <h3>DETALLES DE PRODUCTO</h3>
+  <hr>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+</div>
+<div class="details">
+  <h3>TECNOLOGIAS</h3>
+  <hr>
+  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+</div>
+<section class="other-product">
+  <p class="complet-look">COMPLETA TU LOOK</p>
+  <div class="container-card">
+    <div *ngFor="let producto of productReco; let i = index" class="card">
+        <img
+          class="img-product"
+          [src]="'../../../assets/img/' + producto.foto"
+          alt="producto.nombre"
+        />
+        <div class="container-min">
+          <img class="img-product-min" [src]="'../../../assets/img/' + producto.foto" alt="" />
+        </div>
+        <p class="name-product">{{producto.nombre}}</p>
+        <p class="price">$ {{producto.precio}}</p>
+        <button class="btn" (click)="addShopping()">AGREGAR AL CARRITO</button>
+
+    </div>
+  </div>
+</section>
+<section class="other-product">
+  <p class="recomendation">PRODUCTOS RECOMENDADOS</p>
+  <hr>
+  <div class="container-card">
+    <div *ngFor="let producto of productReco; let i = index" class="card">
+        <img
+          class="img-product"
+          [src]="'../../../assets/img/' + producto.foto"
+          alt="producto.nombre"
+        />
+        <div class="container-min">
+          <img class="img-product-min" [src]="'../../../assets/img/' + producto.foto" alt="" />
+        </div>
+        <p class="name-product">{{producto.nombre}}</p>
+        <p class="price">$ {{producto.precio}}</p>
+        <hr>
+    </div>
+  </div>
+</section>
+</div>

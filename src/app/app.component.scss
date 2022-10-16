@@ -1,0 +1,51 @@
+#app-container {
+  #app-header {
+    .advertisements {
+      background-color: rgba(122,74,88,255);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+    }
+    .banner {
+      padding: 10px 25px;
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        .dog {
+          width: 100px;
+        }
+        .title {
+          width: 58%;
+        }
+      }
+      .container-search {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .input-search {
+          text-align: end;
+          color: #191919;
+
+          .input {
+            border: 1px solid rgba(170,172,174,255);
+            padding: 10px;
+          }
+          .input-icon {
+            color: #191919;
+            position: absolute;
+            top: 97px;
+            font-size: 20px;
+            font-weight: bold;
+            right: 32px;
+          }
+        }
+        .text-free{
+          color:#893b3b;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

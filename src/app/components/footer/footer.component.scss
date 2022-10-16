@@ -1,0 +1,76 @@
+#footer{
+  padding-bottom:20px;
+  .first-footer{
+    text-align: center;
+    background-color: rgba(231,230,226,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+  color:rgba(88,87,87,255);
+  font-size: 30px;
+  padding-top: 10px;
+ }
+ hr{
+  border: 1px solid rgba(88,87,87,255);
+width: 20%;
+margin: 9px 0;
+}
+.logo{
+  display: flex;
+  gap:10px;
+  margin-bottom: 16px;
+}
+svg{
+  color: black;
+  width: 19px;
+  height: 22px;
+}
+  }
+  .section-contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 47px;
+  gap:10px;
+  font-size: 14px;
+  h4{
+color:rgba(55,55,55,255);
+padding-bottom: 10px;
+  }
+  p{
+    color:rgba(140,140,140,255);
+ font-size: 12px;
+  padding-bottom: 5px;
+}
+.email{
+  border: 1px solid #aaacae;
+  padding: 10px;
+}
+.icon{
+  position: relative;
+  right: 20px;
+}
+
+
+
+}
+.last-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+    padding: 10px 47px;
+p{
+  font-size: 13px;
+color:rgba(75,75,75,255)
+}
+img{
+  filter: opacity(0.4) drop-shadow(0 0 0 rgba(224,224,224,255));
+width:44px;
+height: 30px;
+padding-right: 10px;
+}
+}
+
+
+
+}
