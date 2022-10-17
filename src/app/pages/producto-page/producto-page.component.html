@@ -24,14 +24,14 @@
     </div> -->
     <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
     <div class="description">
-      <h1 class="name">{{ producto[0].nombre }}</h1>
-      <p class="price">${{ producto[0].precio }}</p>
-      <p class="reference">Cod. de producto zap-{{ producto[0].referencia }}</p>
+      <h1 class="name">{{ producto[0]?.nombre }}</h1>
+      <p class="price">${{ producto[0]?.precio }}</p>
+      <p class="reference">Cod. de producto zap-{{ producto[0]?.referencia }}</p>
       <div>
         <p class="p-right">Color</p>
         <img
           class="img-right"
-          [src]="'../../../assets/img/' + producto[0].foto"
+          [src]="'../../../assets/img/' + producto[0]?.foto"
           alt="Foto"
         />
       </div>

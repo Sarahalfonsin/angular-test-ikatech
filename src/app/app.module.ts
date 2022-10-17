@@ -16,6 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
 import { FooterModule } from './components/footer/footer.module';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import {  HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { NgxGalleryModule } from '@kolkov/ngx-gallery';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     NavBarModule,
     FontAwesomeModule,
     FooterModule,
